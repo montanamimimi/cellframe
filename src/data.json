@@ -1,0 +1,122 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Wallet",
+            "slug" : "wallet"
+        },
+        {
+            "id": 2,
+            "name": "DEX",
+            "slug" : "dex"
+        },
+        {
+            "id": 3,
+            "name": "TX explorer",
+            "slug" : "txexplorer"
+        },
+        {
+            "id": 4,
+            "name": "Certificates",
+            "slug" : "certificates"
+        },
+        {
+            "id": 5,
+            "name": "Tokens",
+            "slug" : "tokens"
+        },
+        {
+            "id": 6,
+            "name": "VPN client",
+            "slug" : "vpnclient"
+        },
+        {
+            "id": 7,
+            "name": "VPN service",
+            "slug" : "vpnservice"
+        },
+        {
+            "id": 8,
+            "name": "Console",
+            "slug" : "console"
+        },
+        {
+            "id": 9,
+            "name": "Logs",
+            "slug" : "logs"
+        },
+        {
+            "id": 10,
+            "name": "Settings",
+            "slug" : "settings"
+        },
+        {
+            "id": 11,
+            "name": "dApps",
+            "slug" : "dapps"
+        }
+    ],
+
+    "certificates": [
+        {
+            "id": 1,
+            "name": "core-t.0",
+            "type": 1
+        },
+        {
+            "id": 2,
+            "name": "core-t.1",
+            "type": 1
+        },
+        {
+            "id": 3,
+            "name": "core-t.2",
+            "type": 1
+        },
+        {
+            "id": 5,
+            "name": "test.test.1",
+            "type": 1
+        },
+        {
+            "id": 6,
+            "name": "test.test.2",
+            "type": 1
+        },
+        {
+            "id": 7,
+            "name": "test.test.3",
+            "type": 1
+        },
+        {
+            "id": 8,
+            "name": "test.test.4",
+            "type": 1
+        },
+        {
+            "id": 9,
+            "name": "test.test.5",
+            "type": 1
+        },
+        {
+            "id": 10,
+            "name": "test.test.6",
+            "type": 1
+        },
+        {
+            "id": 11,
+            "name": "test.test.7",
+            "type": 1
+        },
+        {
+            "id": 12,
+            "name": "test.test.6",
+            "type": 2
+        },
+        {
+            "id": 13,
+            "name": "test.test.7",
+            "type": 2
+        }
+    ]
+}
