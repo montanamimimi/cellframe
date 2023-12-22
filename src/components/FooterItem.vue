@@ -48,7 +48,7 @@
         text-align: center;
     }
 
-    @media (max-width: 300px) {
+    @media (max-width: 500px) {
         footer {
             height: unset;
             padding: 8px 32px;
