@@ -36,6 +36,14 @@ const props = defineProps({
     box-shadow: 1px 1px 4px 0px #F1E7FF inset, 2px 2px 7px 0px rgba(11, 10, 13, 0.44);
 }
 
+.button--primary:active {
+    background: linear-gradient(230deg, #9580FF 0%, #BD91FC 92.48%);
+}
+
+.button--primary:hover {
+    background: linear-gradient(90deg, #7930DE 0%, #7F65FF 100%); 
+}
+
 .button--inactive {
     cursor: default;
     border-radius: 30px;

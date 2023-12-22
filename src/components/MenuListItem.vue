@@ -21,10 +21,10 @@
 </script>
 
 <template>
-    <RouterLink :to="`/${menu.slug}`">
+    <RouterLink class="menu-link" :to="`/${menu.slug}`">
         <div class="menu-item">
             <div class="image">
-                <img :src="imagePath" alt="Example Image" />
+                <img :src="imagePath" :alt="menu.slug" />
             </div>
             {{ menu.name }}
         </div>
@@ -38,7 +38,7 @@
 }
 .menu-item {
     width: 170px;
-    padding: 16px 24px;
+    padding: 16px 24px 16px 28px;
     border-radius: 0px 16px 16px 0px; 
     cursor: pointer;
     font-size: 13px; 
@@ -46,6 +46,13 @@
     align-items: center;
 }
 
+.menu-link:nth-child(even) {
+
+    .menu-item {
+        padding: 17px 24px 16px 28px;
+    }
+
+}
 .menu-item:hover {
     box-shadow: 3px 3px 5px 0px rgba(8, 7, 13, 0.25) inset, 1px 1px 0px 0px rgba(107, 102, 126, 0.49);
 }
@@ -54,6 +61,10 @@
     .menu-item {
         box-shadow: 3px 3px 5px 0px rgba(8, 7, 13, 0.25) inset, 1px 1px 0px 0px rgba(107, 102, 126, 0.49);
 
+    }
+
+    .image {
+        margin-right: 24px;
     }
 }
 

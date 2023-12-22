@@ -5,11 +5,20 @@
     import FiltersItem from '@/components/FiltersItem.vue'
     import sourceData from '@/data.json'
 
-    import { ref, computed } from 'vue'
+    import { ref, computed} from 'vue'
 
     const certificates = ref(sourceData.certificates)
     const search = ref("")
     const type = ref("1")
+    const showFilters = ref(false)
+    const showActions = ref(false)
+
+    const props = defineProps({
+        wide: {
+            type: Boolean,
+            required: true
+        }
+    })  
 
     function getNewId() {
         let id = 1
@@ -30,9 +39,6 @@
     function addCertificate( name ) {
 
         let newType = (type.value != '0') ? type.value : '1'
-
-      
-
         const newSertificate = {
             "id": getNewId(),
             "name":  name,
@@ -104,7 +110,7 @@
         <div class="body">
 
             <CertificateList :list="getCertificates(type)" :type="typeName" />
-            <div class="actions">
+            <div class="actions" v-if="wide">
                 <div class="actions-item">
                     <div class="actions-header">
                         Filter
@@ -118,16 +124,32 @@
                     </div>
                     <ActionsItem @addNew="addCertificate" />  
                 </div>
-
-
             </div>          
+
+            <div class="actions-mobile" v-else >
+                <div class="show-item" @click="showFilters = !showFilters">
+                    {{ showFilters ? 'Hide' : 'Show' }} filters
+                </div>
+                <FiltersItem @changeType="setNewType" v-if="showFilters" />
+                <div class="show-item" @click="showActions = !showActions">
+                    {{ showActions ? 'Hide' : 'Show' }} actions
+                </div>
+                <ActionsItem @addNew="addCertificate" v-if="showActions" />  
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+
+    .body {
+        display: flex;
+        margin: 24px 21px;
+    }
+
     .actions {
-        padding: 12px 40px;
+        padding: 12px 0px 12px 28px;
+        width: 345px;
     }
 
     .actions-header {
@@ -135,6 +157,14 @@
         font-style: normal;
         font-weight: 700; 
     }   
+
+    .actions-mobile {
+        margin-bottom: 20px;
+    }
+
+    .show-item {
+        padding: 8px 16px;
+    }
 
     @media (max-width: 1130px) {
         .body {

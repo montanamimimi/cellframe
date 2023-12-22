@@ -30,9 +30,9 @@
 
     .list {
         background: var(--panelColor);
-        width: 678px; 
+        width: 690px; 
         border-radius: 12px; 
-        box-shadow: 3px 3px 5px 0px rgba(8, 7, 13, 0.25) inset, 1px 1px 0px 0px rgba(107, 102, 126, 0.49);
+        box-shadow: 3px 3px 4px 0px rgba(8, 7, 13, 0.25) inset, 1px 1px 0px 0px rgba(107, 102, 126, 0.49);
 
     }
 
@@ -47,14 +47,27 @@
         font-size: 12px; 
         background-color: var(--primaryColor);
         padding: 8px 16px 7px 16px;
+        box-shadow: 5px 0 4px -3px rgba(8, 7, 13, 0.25) inset;
     }
 
     .list-item {
         font-size: 16px; 
-        padding: 13px 0;
+        padding: 14px 0 15px 0;
         margin: 0 16px;
         border-bottom: 1px solid var(--primaryColor);
     }
+
+
+    .list-item:nth-child(even) {
+        padding-top: 15px;
+    }
+
+    .list-item:last-child {
+        border-bottom: none;
+        padding-top: 14px;
+        padding-bottom: 13px;
+    }
+
 
     
 @media (max-width: 1130px) {

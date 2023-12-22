@@ -6,7 +6,7 @@
 <template>
     <div class="sidebar">
         <div class="logo">
-            <RouterLink :to="'/'">
+            <RouterLink :to="{name: 'Home'}">
                 <LogoImage />
             </RouterLink>
             
