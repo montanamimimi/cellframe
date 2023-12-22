@@ -173,6 +173,7 @@
 
         .actions {
             display: flex;
+            width: 100%;
         }
 
         .actions-item {
