@@ -30,7 +30,7 @@
 
     .list {
         background: var(--panelColor);
-        width: 690px; 
+        width: 680px; 
         border-radius: 12px; 
         box-shadow: 3px 3px 4px 0px rgba(8, 7, 13, 0.25) inset, 1px 1px 0px 0px rgba(107, 102, 126, 0.49);
 

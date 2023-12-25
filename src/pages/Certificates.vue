@@ -148,8 +148,8 @@
     }
 
     .actions {
-        padding: 12px 0px 12px 28px;
-        width: 345px;
+        padding: 12px 0px 12px 38px;
+        width: 355px;
     }
 
     .actions-header {
