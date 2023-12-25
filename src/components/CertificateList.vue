@@ -68,7 +68,19 @@
         padding-bottom: 13px;
     }
 
+@media (max-width: 1260px) {
+    .list {
+        width: 590px; 
+    }
 
+}
+
+@media (max-width: 1180px) {
+    .list {
+        width: 530px; 
+    }
+
+}
     
 @media (max-width: 1130px) {
     .list {
