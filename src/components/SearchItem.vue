@@ -6,7 +6,15 @@
 
 <template>
     <div class="search">
-        <input id="search" type="text" class="search-input" v-model="searchValue" placeholder="Search" @keyup="$emit('searchByName', searchValue)">
+        <input 
+            id="search" 
+            type="text" 
+            class="search-input" 
+            v-model="searchValue" 
+            placeholder="Search" 
+            @keyup="$emit('searchByName', searchValue)" 
+            @input="$emit('searchByName', searchValue)"
+        >
     </div>
 </template>
 
